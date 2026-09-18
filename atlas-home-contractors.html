@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas Home Contractors | Roofing, Siding &amp; Home Improvement in Staten Island</title>
+<meta name="description" content="Atlas Home Contractors provides residential roofing, siding, windows and custom entry door services in Staten Island, NY. Request a free estimate.">
+<link rel="canonical" href="https://www.atlashomecontractors.com/">
+<meta name="theme-color" content="#121214">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atlas Home Contractors">
+<meta property="og:title" content="Atlas Home Contractors | Roofing, Siding &amp; Home Improvement in Staten Island">
+<meta property="og:description" content="Residential roofing, siding, windows and custom entry doors in Staten Island, NY. Request a free estimate.">
+<meta property="og:url" content="https://www.atlashomecontractors.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1200&h=630&q=70">
+<meta property="og:image:alt" content="Grey-sided residential home with a stone chimney and covered front porch.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121214'/%3E%3Cpath d='M16 7 L25 25 H21.4 L16 13.6 L10.6 25 H7 Z' fill='%23B08252'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121214'/%3E%3Cpath d='M16 7 L25 25 H21.4 L16 13.6 L10.6 25 H7 Z' fill='%23B08252'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Atlas Home Contractors",
+  "url": "https://www.atlashomecontractors.com/",
+  "telephone": "+1-718-442-3064",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "776 Barlow Ave",
+    "addressLocality": "Staten Island",
+    "addressRegion": "NY",
+    "postalCode": "10312",
+    "addressCountry": "US"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.1",
+    "reviewCount": "9",
+    "bestRating": "5"
+  },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential roofing" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom entry doors" } }
+  ]
+}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#121214;
+  --ink-2:#1B1B1E;
+  --ink-3:#26262A;
+  --ivory:#F5F2EC;
+  --ivory-2:#EAE5DB;
+  --card:#FAF8F3;
+  --beige:#E0D9CB;
+
+  /* QA: split grey into on-dark vs on-light so small text clears 4.5:1 both ways */
+  --stone:#C4BFB5;      /* small text on dark  — ~8.4:1 on #121214 */
+  --muted:#5C5954;      /* small text on light — ~6.2:1 on #F5F2EC */
+  --bronze:#B08252;
+  --bronze-dim:#8A6239; /* ~4.9:1 on ivory */
+
+  --fs-display:clamp(2.75rem,7.2vw,6.25rem);
+  --fs-h2:clamp(2rem,4.3vw,3.5rem);
+  --fs-h3:clamp(1.3rem,2vw,1.75rem);
+  --fs-lead:clamp(1.02rem,1.35vw,1.2rem);
+  --fs-body:1rem;
+  --fs-meta:.72rem;
+
+  --gut:clamp(1.25rem,5vw,5.5rem);
+  --sec:clamp(5.5rem,11vw,10.5rem);
+  --maxw:1320px;
+  --navh:5.25rem;
+
+  --r:2px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --hair:rgba(18,18,20,.14);
+  --hair-i:rgba(245,242,236,.16);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+/* QA FIX 2: anchored sections no longer land under the fixed header */
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--navh);overflow-x:clip}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--ivory);color:var(--ink);
+  font-family:Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:var(--fs-body);line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:clip;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4,p,figure,blockquote{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+[inert]{pointer-events:none}
+
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut)}
+.serif{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:400;font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0;letter-spacing:-.022em;line-height:1.02}
+
+.eyebrow{
+  font-size:var(--fs-meta);letter-spacing:.2em;text-transform:uppercase;
+  font-weight:600;color:var(--bronze-dim);display:flex;align-items:center;gap:.85rem;
+}
+.eyebrow::before{content:"";width:2rem;height:1px;background:currentColor;opacity:.55;flex:none}
+.on-dark .eyebrow{color:var(--bronze)}
+
+:focus-visible{outline:2px solid var(--bronze);outline-offset:3px;border-radius:var(--r)}
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--ink);color:var(--ivory);padding:.85rem 1.25rem}
+.skip:focus{left:.5rem;top:.5rem}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:1.02rem 1.85rem;border-radius:var(--r);border:1px solid transparent;
+  font-size:.83rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;
+  text-decoration:none;cursor:pointer;position:relative;
+  transition:transform .4s var(--ease),background-color .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease);
+}
+.btn-primary{background:var(--bronze);color:#150F09;border-color:var(--bronze)}
+.btn-primary:hover{background:#C49361;border-color:#C49361;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ivory);border-color:rgba(245,242,236,.45)}
+.btn-ghost:hover{background:rgba(245,242,236,.1);border-color:var(--ivory);transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.btn-dark:hover{background:var(--ink-3);border-color:var(--ink-3);transform:translateY(-2px)}
+.btn-outline-dark{background:transparent;color:var(--ink);border-color:rgba(18,18,20,.3)}
+.btn-outline-dark:hover{border-color:var(--ink);background:rgba(18,18,20,.05);transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed;inset:0 0 auto;z-index:100;
+  transition:background-color .5s var(--ease),backdrop-filter .5s var(--ease),border-color .5s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:clamp(.95rem,1.7vw,1.5rem);transition:padding-block .5s var(--ease)}
+.nav.solid{background:rgba(18,18,20,.9);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom-color:var(--hair-i)}
+.nav.solid .nav-in{padding-block:.8rem}
+
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ivory);flex:none}
+.brand svg{width:26px;height:26px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-size:.8rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}
+.brand-sub{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--stone);margin-top:.32rem}
+@media (max-width:900px){.brand-sub{display:none}}
+
+.nav-links{display:flex;align-items:center;gap:clamp(1.3rem,2.4vw,2.4rem);list-style:none;margin:0;padding:0}
+.nav-links a{
+  text-decoration:none;color:var(--ivory);font-size:.78rem;font-weight:500;
+  letter-spacing:.11em;text-transform:uppercase;position:relative;padding-block:.35rem;opacity:.85;
+  transition:opacity .3s var(--ease);
+}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--bronze);transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nav-links a:hover,.nav-links a[aria-current="true"]{opacity:1}
+.nav-links a:hover::after,.nav-links a[aria-current="true"]::after{transform:scaleX(1);transform-origin:left}
+.nav-cta{flex:none}
+.nav-cta .btn{padding:.8rem 1.35rem;font-size:.72rem}
+
+.burger{display:none;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:1px solid var(--hair-i);border-radius:var(--r);cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ivory);position:relative;transition:background .3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ivory);transition:transform .4s var(--ease-out)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+
+.drawer{
+  position:fixed;inset:0;z-index:99;background:var(--ink);
+  padding:6.5rem var(--gut) 2rem;
+  display:flex;flex-direction:column;
+  transform:translateY(-100%);visibility:hidden;
+  transition:transform .6s var(--ease-out),visibility .6s;
+}
+.drawer.open{transform:translateY(0);visibility:visible}
+.drawer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.drawer li{border-bottom:1px solid var(--hair-i)}
+.drawer a{
+  display:block;padding:1.15rem 0;text-decoration:none;color:var(--ivory);
+  font-family:Fraunces,Georgia,serif;font-size:1.75rem;letter-spacing:-.02em;
+  opacity:0;transform:translateY(14px);
+}
+.drawer.open a{opacity:1;transform:none;transition:opacity .5s var(--ease) var(--d,0s),transform .5s var(--ease-out) var(--d,0s)}
+.drawer-foot{margin-top:auto;padding-top:2rem;display:flex;flex-direction:column;gap:.75rem}
+.drawer-foot .btn{width:100%}
+.drawer-tel{color:var(--stone);font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;text-align:center;padding-top:.4rem}
+@media (max-width:900px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:clip;background:var(--ink);isolation:isolate}
+.hero-layers{position:absolute;inset:0;z-index:-2}
+/* QA FIX 4: insets widened so parallax travel never exposes an edge */
+.hero-sky{position:absolute;inset:-16% -4% -16%;background:linear-gradient(175deg,#2A2F36 0%,#1A1D22 46%,#121214 100%);transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.hero-img{position:absolute;inset:-20% -3% -24%;transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;filter:saturate(.72) contrast(1.06) brightness(.82)}
+.hero-scrim{
+  position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(to top,rgba(18,18,20,.94) 0%,rgba(18,18,20,.64) 34%,rgba(18,18,20,.28) 62%,rgba(18,18,20,.52) 100%),
+    radial-gradient(120% 78% at 18% 82%,rgba(18,18,20,.74) 0%,transparent 64%);
+}
+.hero-grain{position:absolute;inset:0;z-index:-1;opacity:.05;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+.hero-content{position:relative;width:100%;padding-block:clamp(6rem,14vh,9rem) clamp(4.5rem,9vh,6rem);color:var(--ivory)}
+.hero-eyebrow{color:var(--bronze);margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.hero h1{font-size:var(--fs-display);max-width:16ch;margin-bottom:clamp(1.5rem,2.6vw,2rem)}
+/* QA FIX 3: mask box padded so descenders (g in "Designed") are not clipped */
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.hero h1 .ln>span{display:block}
+.hero-lead{font-size:var(--fs-lead);max-width:46ch;color:rgba(245,242,236,.82);line-height:1.62;margin-bottom:clamp(2.25rem,4vw,3rem)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem}
+@media (max-width:560px){.hero-cta .btn{flex:1 1 100%}}
+
+.hero-scroll{
+  position:absolute;right:var(--gut);bottom:clamp(4.5rem,9vh,6rem);z-index:2;
+  display:flex;align-items:center;gap:.8rem;color:rgba(245,242,236,.52);
+  font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;writing-mode:vertical-rl;
+}
+.hero-scroll i{display:block;width:1px;height:58px;background:linear-gradient(to bottom,var(--bronze),transparent);animation:drip 2.6s var(--ease) infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}46%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (max-width:1100px){.hero-scroll{display:none}}
+
+.hero h1 .ln>span,.hero-eyebrow,.hero-lead,.hero-cta{opacity:0;transform:translateY(clamp(18px,2.4vw,30px))}
+.ready .hero h1 .ln>span{animation:rise .95s var(--ease-out) forwards}
+.ready .hero h1 .ln:nth-child(1)>span{animation-delay:.16s}
+.ready .hero h1 .ln:nth-child(2)>span{animation-delay:.27s}
+.ready .hero-eyebrow{animation:rise .8s var(--ease-out) .06s forwards}
+.ready .hero-lead{animation:rise .8s var(--ease-out) .42s forwards}
+.ready .hero-cta{animation:rise .8s var(--ease-out) .54s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ============ TRUST ============ */
+.trust{background:var(--ink);color:var(--ivory);border-top:1px solid var(--hair-i)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-cell{padding:clamp(2rem,3.6vw,2.9rem) clamp(1rem,2.2vw,2.2rem);border-left:1px solid var(--hair-i);display:flex;flex-direction:column;gap:.45rem}
+.trust-cell:first-child{border-left:0;padding-left:0}
+.trust-k{font-family:Fraunces,Georgia,serif;font-size:clamp(1.45rem,2.5vw,2.1rem);line-height:1;letter-spacing:-.02em}
+.trust-k em{font-style:normal;color:var(--bronze)}
+.trust-v{font-size:.68rem;letter-spacing:.17em;text-transform:uppercase;color:var(--stone)}
+@media (max-width:820px){
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-cell:nth-child(odd){border-left:0;padding-left:0}
+  .trust-cell:nth-child(n+3){border-top:1px solid var(--hair-i)}
+}
+
+/* ============ SECTION SHELL ============ */
+.sec{padding-block:var(--sec)}
+.sec-dark{background:var(--ink);color:var(--ivory)}
+.sec-head{display:flex;flex-direction:column;gap:clamp(1.15rem,2.2vw,1.6rem);margin-bottom:clamp(3rem,6vw,5rem)}
+.sec-head h2{font-size:var(--fs-h2);max-width:20ch}
+
+/* ============ INTRO ============ */
+.intro-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2.5rem,7vw,7rem);align-items:start}
+.intro-grid h2{font-size:var(--fs-h2);max-width:11ch;margin-top:clamp(1.15rem,2.2vw,1.6rem)}
+.intro-body{display:flex;flex-direction:column;gap:1.3rem;color:#3C3A36;font-size:var(--fs-lead);line-height:1.72;max-width:52ch}
+.intro-body .rule{width:100%;height:1px;background:var(--hair);margin-block:.5rem}
+.intro-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.4rem}
+.intro-tags span{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;border:1px solid var(--hair);padding:.5rem .85rem;border-radius:var(--r);color:var(--muted)}
+@media (max-width:860px){.intro-grid{grid-template-columns:1fr}}
+
+/* ============ SERVICES ============ */
+.svc{border-top:1px solid var(--hair)}
+.svc-row{
+  display:grid;grid-template-columns:5.5rem minmax(0,1fr) minmax(0,.95fr);
+  gap:clamp(1.25rem,3.5vw,3rem);align-items:center;
+  padding-block:clamp(2rem,3.6vw,3rem);border-bottom:1px solid var(--hair);
+  position:relative;
+}
+.svc-row::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--bronze);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+.svc-row:hover::after{transform:scaleX(1)}
+.svc-num{font-family:Fraunces,Georgia,serif;font-size:1rem;color:var(--muted);letter-spacing:.04em;transition:color .5s var(--ease)}
+.svc-row:hover .svc-num{color:var(--bronze)}
+.svc-txt h3{font-size:var(--fs-h3);font-family:Fraunces,Georgia,serif;font-weight:400;letter-spacing:-.02em;margin-bottom:.6rem;transition:transform .6s var(--ease-out)}
+.svc-row:hover .svc-txt h3{transform:translateX(6px)}
+.svc-txt p{color:#4A4844;max-width:48ch;line-height:1.68}
+.svc-media{aspect-ratio:16/10;overflow:hidden;border-radius:var(--r);background:var(--ivory-2)}
+/* QA FIX 1: parallax writes --py, hover writes --hs — composed, so neither clobbers the other */
+.svc-media img{
+  width:100%;height:114%;object-fit:cover;filter:saturate(.76) contrast(1.03);
+  transform:translate3d(0,var(--py,0px),0) scale(var(--hs,1));
+  transition:filter .7s var(--ease),scale .9s var(--ease-out);
+  will-change:transform;
+}
+.svc-row:hover .svc-media img{--hs:1.045;filter:saturate(.95) contrast(1.05)}
+@media (max-width:900px){
+  .svc-row{grid-template-columns:3.2rem 1fr;row-gap:1.4rem}
+  .svc-media{grid-column:1/-1;aspect-ratio:16/9}
+}
+
+/* ============ 3D SEQUENCE ============ */
+.seq{position:relative;background:var(--ink);color:var(--ivory)}
+.seq-track{height:520vh}
+.seq-stick{position:sticky;top:0;height:100svh;overflow:clip;display:grid;place-items:center}
+
+.stage{position:absolute;inset:0;perspective:1400px;perspective-origin:50% 46%;display:grid;place-items:center}
+.stage-in{
+  position:relative;width:min(78vw,780px);aspect-ratio:4/3;transform-style:preserve-3d;
+  transform:rotateX(calc(var(--rx,0) * 1deg)) rotateY(calc(var(--ry,0) * 1deg)) scale(var(--sc,1));
+  will-change:transform;
+}
+/* QA FIX 14: progressive insets so planes read as receding cards, not one image swapping for another */
+.plane{
+  position:absolute;inset:var(--ins,0);border-radius:var(--r);overflow:hidden;
+  transform:translate3d(0,calc(var(--ty,0) * 1px),calc(var(--tz,0) * 1px)) scale(var(--ps,1));
+  opacity:var(--op,1);will-change:transform,opacity;backface-visibility:hidden;
+  box-shadow:0 30px 70px -44px rgba(0,0,0,.9);
+}
+.plane img{width:100%;height:100%;object-fit:cover;filter:saturate(.7) contrast(1.05) brightness(.9)}
+.plane-label{
+  position:absolute;left:0;bottom:0;padding:.6rem .85rem;
+  font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;
+  background:rgba(18,18,20,.78);color:var(--bronze);
+}
+.plane-sky{background:linear-gradient(170deg,#2E343C,#15171A)}
+.plane-frame{border:1px solid rgba(176,130,82,.36);background:transparent;box-shadow:none}
+.plane-frame::before,.plane-frame::after{content:"";position:absolute;background:rgba(176,130,82,.26)}
+.plane-frame::before{left:50%;top:0;bottom:0;width:1px}
+.plane-frame::after{top:50%;left:0;right:0;height:1px}
+
+/* QA FIX 7: readable scrim behind the phase copy, which sits over photography */
+.seq-scrim{position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:radial-gradient(58% 46% at 50% 50%,rgba(18,18,20,.88) 0%,rgba(18,18,20,.6) 46%,transparent 78%)}
+
+/* QA FIX 5: phases share one grid cell, so the block no longer jumps height between phases */
+.seq-copy{position:relative;z-index:3;display:grid;text-align:center;padding-inline:var(--gut);pointer-events:none;max-width:40ch}
+.seq-phase{grid-area:1/1;opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .7s var(--ease-out)}
+.seq-phase[data-on]{opacity:1;transform:none}
+.seq-copy .eyebrow{justify-content:center;color:var(--bronze)}
+.seq-phase h2{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(1.85rem,4vw,3.1rem);letter-spacing:-.022em;line-height:1.06;margin-top:1.1rem}
+.seq-phase p{margin-top:.9rem;color:rgba(245,242,236,.74);font-size:.98rem;line-height:1.66}
+
+.seq-rail{position:absolute;left:var(--gut);top:50%;transform:translateY(-50%);z-index:4;display:flex;flex-direction:column;gap:.9rem}
+.seq-rail button{
+  display:flex;align-items:center;gap:.7rem;background:none;border:0;padding:.3rem 0;cursor:pointer;
+  color:rgba(245,242,236,.5);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+  transition:color .4s var(--ease);
+}
+.seq-rail i{display:block;width:26px;height:1px;background:currentColor;transition:width .5s var(--ease)}
+.seq-rail button[aria-current="true"]{color:var(--bronze)}
+.seq-rail button[aria-current="true"] i{width:44px}
+@media (max-width:900px){
+  .seq-track{height:460vh}
+  .stage-in{width:86vw}
+  .seq-rail{left:auto;right:var(--gut);gap:.7rem}
+  .seq-rail span{display:none}
+}
+@media (max-width:560px){.seq-rail i{width:16px}.seq-rail button[aria-current="true"] i{width:28px}}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+.about-media{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:var(--r);background:var(--ink-2)}
+.about-media img{width:100%;height:116%;object-fit:cover;filter:saturate(.68) contrast(1.06);transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.about-media figcaption{
+  position:absolute;left:0;bottom:0;right:0;padding:1rem 1.15rem;
+  background:linear-gradient(to top,rgba(18,18,20,.9),transparent);
+  color:rgba(245,242,236,.78);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;
+}
+.about-body h2{font-size:var(--fs-h2);max-width:14ch;margin-block:clamp(1.15rem,2.2vw,1.6rem) clamp(1.4rem,2.6vw,2rem)}
+.about-body p{color:rgba(245,242,236,.78);font-size:var(--fs-lead);line-height:1.72;max-width:54ch;margin-bottom:1.15rem}
+.about-note{margin-top:1.9rem;padding-top:1.5rem;border-top:1px solid var(--hair-i);font-size:.84rem;color:var(--stone);max-width:52ch;line-height:1.66}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}.about-media{aspect-ratio:4/3}}
+
+/* ============ WORK ============ */
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(.7rem,1.4vw,1.15rem)}
+.work-item{position:relative;overflow:hidden;border-radius:var(--r);background:var(--ivory-2);display:block}
+.work-item img{
+  width:100%;height:112%;object-fit:cover;filter:saturate(.74) contrast(1.03);
+  transform:translate3d(0,var(--py,0px),0) scale(var(--hs,1));
+  transition:filter .7s var(--ease),scale .95s var(--ease-out);will-change:transform;
+}
+.work-item:hover img{--hs:1.05;filter:saturate(.95)}
+.work-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:clamp(1.1rem,2vw,1.6rem);
+  background:linear-gradient(to top,rgba(18,18,20,.88) 12%,transparent);
+  color:var(--ivory);display:flex;align-items:baseline;gap:.8rem;
+}
+.work-item .wt{font-family:Fraunces,Georgia,serif;font-size:clamp(1.05rem,1.8vw,1.45rem);letter-spacing:-.02em}
+.work-item .wn{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bronze);margin-left:auto}
+.w-a{grid-column:span 7;aspect-ratio:4/3}
+.w-b{grid-column:span 5;aspect-ratio:3/4}
+.w-c{grid-column:span 5;aspect-ratio:1/1}
+.w-d{grid-column:span 7;aspect-ratio:16/11}
+.work-disclaim{margin-top:clamp(1.5rem,2.6vw,2rem);font-size:.82rem;color:var(--muted);max-width:70ch;line-height:1.66}
+@media (max-width:820px){
+  .w-a,.w-b,.w-c,.w-d{grid-column:span 12}
+  .w-a,.w-c,.w-d{aspect-ratio:16/10}.w-b{aspect-ratio:4/3}
+}
+
+/* ============ REVIEWS ============ */
+.rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.5rem;margin-bottom:clamp(3rem,6vw,4.5rem)}
+.rev-top h2{font-size:var(--fs-h2)}
+.rev-score{display:flex;align-items:center;gap:1.1rem;border:1px solid var(--hair);padding:.95rem 1.25rem;border-radius:var(--r)}
+.rev-score b{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:1.65rem;letter-spacing:-.02em}
+.rev-score .sd{display:flex;flex-direction:column;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);line-height:1.5}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.25rem,2.4vw,2rem)}
+.rev{display:flex;flex-direction:column;gap:1.3rem;padding-top:2.9rem;border-top:1px solid var(--hair);position:relative}
+/* QA: quote mark seated below the rule instead of straddling it */
+.rev::before{
+  content:"”";position:absolute;top:.28rem;left:-.02em;
+  font-family:Fraunces,Georgia,serif;font-size:4.6rem;line-height:.8;color:var(--bronze);opacity:.3;pointer-events:none;
+}
+.rev blockquote{font-family:Fraunces,Georgia,serif;font-size:clamp(1.02rem,1.35vw,1.16rem);line-height:1.5;letter-spacing:-.012em;color:#2C2A27;position:relative;z-index:1}
+.rev figcaption{margin-top:auto;display:flex;flex-direction:column;gap:.4rem}
+.rev .who{font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
+.stars{color:var(--bronze-dim);font-size:.78rem;letter-spacing:.22em}
+.rev .src{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:900px){.rev-grid{grid-template-columns:1fr;gap:2.6rem}}
+
+/* ============ PROCESS ============ */
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.proc{padding:clamp(1.9rem,3vw,2.5rem) clamp(1rem,2vw,2rem) 0;border-left:1px solid var(--hair-i);display:flex;flex-direction:column;gap:.85rem}
+.proc:first-child{border-left:0;padding-left:0}
+.proc-n{font-family:Fraunces,Georgia,serif;font-size:.95rem;color:var(--bronze)}
+.proc h3{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(1.1rem,1.7vw,1.4rem);letter-spacing:-.02em;line-height:1.16;max-width:14ch}
+@media (max-width:760px){
+  .proc-grid{grid-template-columns:1fr 1fr}
+  .proc:nth-child(odd){border-left:0;padding-left:0}
+  .proc:nth-child(n+3){margin-top:1.8rem;border-top:1px solid var(--hair-i);padding-top:1.8rem}
+}
+
+/* ============ CTA ============ */
+.cta{position:relative;background:var(--ink);color:var(--ivory);overflow:clip;isolation:isolate}
+.cta-bg{position:absolute;inset:-26% 0;z-index:-2;transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.cta-bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.55) contrast(1.08) brightness(.42)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to right,rgba(18,18,20,.95),rgba(18,18,20,.74) 58%,rgba(18,18,20,.88))}
+.cta-in{padding-block:clamp(5.5rem,11vw,9rem);max-width:62ch}
+.cta h2{font-size:var(--fs-h2);margin-block:clamp(1.15rem,2.2vw,1.6rem) clamp(1.3rem,2.4vw,1.8rem);max-width:15ch}
+.cta p{color:rgba(245,242,236,.8);font-size:var(--fs-lead);line-height:1.68;margin-bottom:clamp(2.2rem,4vw,2.9rem);max-width:48ch}
+.cta-btns{display:flex;flex-wrap:wrap;gap:.85rem}
+@media (max-width:560px){.cta-btns .btn{flex:1 1 100%}}
+
+/* ============ CONTACT ============ */
+.ct-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2.5rem,6vw,6rem);align-items:start}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.1rem,2vw,1.6rem)}
+.field{display:flex;flex-direction:column;gap:.55rem}
+.field.full{grid-column:1/-1}
+.field label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.field .req{color:var(--bronze-dim)}
+.field input,.field select,.field textarea{
+  width:100%;background:transparent;border:0;border-bottom:1px solid var(--hair);
+  padding:.75rem 0;border-radius:0;transition:border-color .35s var(--ease);
+}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%235C5954' stroke-width='1.4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .15rem center;padding-right:1.6rem;cursor:pointer}
+.field textarea{resize:vertical;min-height:7rem;line-height:1.6}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-bottom-color:var(--bronze)}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}
+.err{font-size:.75rem;color:#9A3325;min-height:1.05rem;line-height:1.05rem}
+.field[data-invalid] input,.field[data-invalid] select,.field[data-invalid] textarea{border-bottom-color:#9A3325}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:1.1rem;margin-top:.5rem}
+.form-note{font-size:.78rem;color:var(--muted);line-height:1.6;max-width:44ch}
+.form-status{grid-column:1/-1;font-size:.88rem;line-height:1.6;padding:.9rem 1.1rem;border-radius:var(--r);border:1px solid var(--hair);background:rgba(176,130,82,.1);display:none}
+.form-status.show{display:block}
+
+.ct-card{border:1px solid var(--hair);border-radius:var(--r);padding:clamp(1.6rem,3vw,2.2rem);display:flex;flex-direction:column;gap:1.6rem;background:var(--card)}
+.ct-b{display:flex;flex-direction:column;gap:.45rem}
+.ct-b dt{font-size:.66rem;letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}
+.ct-b dd{margin:0;font-size:1rem;line-height:1.6}
+.ct-b a{text-decoration:none;border-bottom:1px solid var(--hair);padding-bottom:1px;transition:border-color .3s}
+.ct-b a:hover{border-color:var(--bronze)}
+.ct-name{font-family:Fraunces,Georgia,serif;font-size:1.35rem;letter-spacing:-.02em;padding-bottom:1.4rem;border-bottom:1px solid var(--hair)}
+@media (max-width:900px){.ct-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}}
+
+/* ============ MAP ============ */
+.map{border-top:1px solid var(--hair);background:var(--ivory-2)}
+.map-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.75rem;padding-block:clamp(2.6rem,5vw,4rem)}
+.map-txt h3{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(1.3rem,2.2vw,1.85rem);letter-spacing:-.02em;margin-block:.9rem .5rem}
+.map-txt p{color:var(--muted);font-size:.94rem}
+.map-plus{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.5rem}
+
+/* ============ FOOTER ============ */
+.ft{background:var(--ink);color:var(--ivory)}
+.ft-in{padding-block:clamp(3.5rem,7vw,5.5rem) clamp(2rem,3vw,2.5rem)}
+.ft-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(2rem,4vw,3.5rem);padding-bottom:clamp(2.5rem,5vw,3.5rem);border-bottom:1px solid var(--hair-i)}
+.ft-brand{font-family:Fraunces,Georgia,serif;font-size:clamp(1.4rem,2.4vw,1.9rem);letter-spacing:-.022em;max-width:12ch;line-height:1.1}
+.ft-tag{margin-top:1rem;color:var(--stone);font-size:.86rem;line-height:1.65;max-width:34ch}
+.ft h4{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin-bottom:1.1rem}
+.ft ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.7rem}
+.ft ul a,.ft address a{text-decoration:none;color:rgba(245,242,236,.8);font-size:.9rem;transition:color .3s var(--ease)}
+.ft ul a:hover,.ft address a:hover{color:var(--bronze)}
+.ft address{font-style:normal;color:rgba(245,242,236,.8);font-size:.9rem;line-height:1.75}
+.ft-bot{padding-top:1.75rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;color:var(--stone);font-size:.75rem;letter-spacing:.06em}
+@media (max-width:760px){.ft-top{grid-template-columns:1fr 1fr}.ft-brand-col{grid-column:1/-1}}
+
+/* ============ MOBILE BAR ============ */
+.mbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:95;display:none;
+  grid-template-columns:1fr 1fr;gap:1px;background:var(--hair-i);
+  padding-bottom:env(safe-area-inset-bottom);
+  transform:translateY(110%);transition:transform .5s var(--ease-out);
+}
+.mbar.on{transform:none}
+.mbar a{display:flex;align-items:center;justify-content:center;padding:1.02rem .5rem;text-decoration:none;font-size:.74rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
+.mbar .m-call{background:var(--ink);color:var(--ivory)}
+.mbar .m-est{background:var(--bronze);color:#150F09}
+/* QA FIX 12: footer no longer sits under the fixed mobile bar */
+@media (max-width:760px){.mbar{display:grid}.ft-in{padding-bottom:calc(5rem + env(safe-area-inset-bottom))}}
+
+/* ============ REVEALS ============ */
+[data-rv]{opacity:0;transform:translateY(clamp(16px,2.2vw,28px))}
+[data-rv].in{opacity:1;transform:none;transition:opacity .85s var(--ease) var(--d,0s),transform .95s var(--ease-out) var(--d,0s)}
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  [data-rv]{opacity:1!important;transform:none!important}
+  .hero h1 .ln>span,.hero-eyebrow,.hero-lead,.hero-cta{opacity:1!important;transform:none!important}
+  .hero-scroll i{animation:none;transform:scaleY(1)}
+  .mbar{transform:none}
+  .seq-phase{opacity:1}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Atlas Home Contractors — home">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 5 L27 27 H22.6 L16 12.9 L9.4 27 H5 Z" fill="#B08252"/></svg>
+      <span class="brand-txt">
+        <span class="brand-name">Atlas Home Contractors</span>
+        <span class="brand-sub">Staten Island, NY</span>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta"><a class="btn btn-primary" href="#contact">Get a Free Estimate</a></div>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="Mobile">
+    <ul>
+      <li style="--d:.08s"><a href="#top">Home</a></li>
+      <li style="--d:.14s"><a href="#services">Services</a></li>
+      <li style="--d:.2s"><a href="#about">About</a></li>
+      <li style="--d:.26s"><a href="#reviews">Reviews</a></li>
+      <li style="--d:.32s"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="drawer-foot">
+    <a class="btn btn-primary" href="#contact">Request a Free Estimate</a>
+    <a class="btn btn-ghost" href="tel:+17184423064">Call +1 718-442-3064</a>
+    <span class="drawer-tel">776 Barlow Ave, Staten Island, NY 10312</span>
+  </div>
+</div>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-layers" aria-hidden="true">
+    <div class="hero-sky" data-px="0.10"></div>
+    <div class="hero-img" data-px="0.18">
+      <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=2000&q=72"
+           alt="" width="2000" height="1333" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+
+  <div class="wrap hero-content">
+    <p class="eyebrow hero-eyebrow">Residential Exterior Contractor — Staten Island</p>
+    <h1 class="serif">
+      <span class="ln"><span>Built to Protect.</span></span>
+      <span class="ln"><span>Designed to Last.</span></span>
+    </h1>
+    <p class="hero-lead">Residential roofing, siding, windows and exterior improvements backed by decades of hands-on experience in Staten Island.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Request a Free Estimate</a>
+      <a class="btn btn-ghost" href="tel:+17184423064">Call Atlas</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+</section>
+
+<section class="trust" aria-label="At a glance">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-cell"><span class="trust-k serif">40<em>+</em> Years</span><span class="trust-v">Of experience</span></div>
+      <div class="trust-cell"><span class="trust-k serif">Licensed</span><span class="trust-v">&amp; Insured</span></div>
+      <div class="trust-cell"><span class="trust-k serif">4.1<em> / 5</em></span><span class="trust-v">Google rating · 9 reviews</span></div>
+      <div class="trust-cell"><span class="trust-k serif">Staten Island</span><span class="trust-v">New York</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap intro-grid">
+    <div data-rv>
+      <p class="eyebrow">The Atlas Standard</p>
+      <h2 class="serif">Experience you can build on.</h2>
+    </div>
+    <div class="intro-body" data-rv style="--d:.12s">
+      <p>Atlas Home Contractors is a residential exterior contractor working with homeowners across Staten Island. The work covers roofing, siding, windows and custom front entrance doors — the parts of a house that take the weather and set the first impression.</p>
+      <div class="rule" role="presentation"></div>
+      <p>The approach is straightforward: look at the house, explain what it needs, put the numbers in writing, and do the work properly. Customers describe Bobby, the owner, as honest, fair and reliable — and that is the standard the company is judged by.</p>
+      <div class="intro-tags"><span>Roofing</span><span>Siding</span><span>Windows</span><span>Entry Doors</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Services</p>
+      <h2 class="serif">Exterior work that protects the home.</h2>
+    </div>
+    <div class="svc">
+      <article class="svc-row" data-rv>
+        <span class="svc-num">01</span>
+        <div class="svc-txt"><h3>Roofing</h3><p>Protect the structure above everything else. Atlas handles residential roofing work with an emphasis on dependable installation and long-term performance.</p></div>
+        <div class="svc-media"><img data-px="0.05" src="https://images.unsplash.com/photo-1607810991928-7e609a664e8d?auto=format&fit=crop&w=900&q=70" alt="Gabled roofline of a residential home against a clear sky." width="900" height="600" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="svc-row" data-rv style="--d:.06s">
+        <span class="svc-num">02</span>
+        <div class="svc-txt"><h3>Siding</h3><p>Refresh the appearance of the home while improving exterior protection with carefully installed siding.</p></div>
+        <div class="svc-media"><img data-px="0.05" src="https://images.unsplash.com/photo-1604177420528-44bb3e1dcd7b?auto=format&fit=crop&w=900&q=70" alt="Close view of clean white horizontal lap siding in daylight." width="900" height="600" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="svc-row" data-rv style="--d:.12s">
+        <span class="svc-num">03</span>
+        <div class="svc-txt"><h3>Windows</h3><p>Improve the look, comfort and exterior performance of the home with professionally installed windows.</p></div>
+        <div class="svc-media"><img data-px="0.05" src="https://images.unsplash.com/photo-1591926164531-2bbccbbb0443?auto=format&fit=crop&w=900&q=70" alt="White-framed residential window set into a painted brick exterior wall." width="900" height="600" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="svc-row" data-rv style="--d:.18s">
+        <span class="svc-num">04</span>
+        <div class="svc-txt"><h3>Custom Entry Doors</h3><p>Create a stronger first impression with a custom front entrance door designed around the character of the home.</p></div>
+        <div class="svc-media"><img data-px="0.05" src="https://images.unsplash.com/photo-1612451850869-87c3c039c72e?auto=format&fit=crop&w=900&q=70" alt="Front elevation of a white wood-sided home with a covered entrance." width="900" height="600" loading="lazy" decoding="async"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="seq on-dark" id="sequence" aria-label="How a home is protected, layer by layer">
+  <div class="seq-track" id="seqTrack">
+    <div class="seq-stick">
+      <div class="stage" aria-hidden="true">
+        <div class="stage-in" id="stageIn">
+          <div class="plane plane-sky" id="pl-sky" style="--ins:-8%"></div>
+          <div class="plane" id="pl-house" style="--ins:0%">
+            <img src="https://images.unsplash.com/photo-1629230521600-86369837b70d?auto=format&fit=crop&w=1100&q=70" alt="" width="1100" height="825" loading="lazy" decoding="async">
+            <span class="plane-label">Structure</span>
+          </div>
+          <div class="plane" id="pl-roof" style="--ins:5%">
+            <img src="https://images.unsplash.com/photo-1607810991928-7e609a664e8d?auto=format&fit=crop&w=1000&q=70" alt="" width="1000" height="750" loading="lazy" decoding="async">
+            <span class="plane-label">Roof</span>
+          </div>
+          <div class="plane" id="pl-side" style="--ins:10%">
+            <img src="https://images.unsplash.com/photo-1604177420528-44bb3e1dcd7b?auto=format&fit=crop&w=1000&q=70" alt="" width="1000" height="750" loading="lazy" decoding="async">
+            <span class="plane-label">Siding</span>
+          </div>
+          <div class="plane" id="pl-win" style="--ins:15%">
+            <img src="https://images.unsplash.com/photo-1591926164531-2bbccbbb0443?auto=format&fit=crop&w=1000&q=70" alt="" width="1000" height="750" loading="lazy" decoding="async">
+            <span class="plane-label">Windows</span>
+          </div>
+          <div class="plane" id="pl-door" style="--ins:20%">
+            <img src="https://images.unsplash.com/photo-1612451850869-87c3c039c72e?auto=format&fit=crop&w=1000&q=70" alt="" width="1000" height="750" loading="lazy" decoding="async">
+            <span class="plane-label">Entrance</span>
+          </div>
+          <div class="plane plane-frame" id="pl-frame" style="--ins:-4%"></div>
+        </div>
+      </div>
+
+      <div class="seq-scrim" aria-hidden="true"></div>
+
+      <div class="seq-copy">
+        <div class="seq-phase" data-phase="0" data-on>
+          <p class="eyebrow">Phase 01</p>
+          <h2>Start with the structure.</h2>
+          <p>Every exterior job begins with what is already there — the shape of the house, its age, and how it has weathered.</p>
+        </div>
+        <div class="seq-phase" data-phase="1">
+          <p class="eyebrow">Phase 02</p>
+          <h2>Protect what matters.</h2>
+          <p>The roof carries the load of the weather. It is the first line of defence for everything underneath it.</p>
+        </div>
+        <div class="seq-phase" data-phase="2">
+          <p class="eyebrow">Phase 03</p>
+          <h2>Refresh the exterior.</h2>
+          <p>Siding wraps the structure — changing how the home looks and how well it stands up to the elements.</p>
+        </div>
+        <div class="seq-phase" data-phase="3">
+          <p class="eyebrow">Phase 04</p>
+          <h2>Finish the entrance.</h2>
+          <p>Windows and a custom front entrance door bring the elevation together and set the character of the house.</p>
+        </div>
+        <div class="seq-phase" data-phase="4">
+          <p class="eyebrow">Phase 05</p>
+          <h2>Built for the years ahead.</h2>
+          <p>Work done properly the first time is work the homeowner stops thinking about.</p>
+        </div>
+      </div>
+
+      <nav class="seq-rail" id="seqRail" aria-label="Sequence phases">
+        <button type="button" data-go="0" aria-current="true"><i></i><span>Structure</span></button>
+        <button type="button" data-go="1" aria-current="false"><i></i><span>Roof</span></button>
+        <button type="button" data-go="2" aria-current="false"><i></i><span>Siding</span></button>
+        <button type="button" data-go="3" aria-current="false"><i></i><span>Entrance</span></button>
+        <button type="button" data-go="4" aria-current="false"><i></i><span>Complete</span></button>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark on-dark" id="about">
+  <div class="wrap about-grid">
+    <figure class="about-media" data-rv>
+      <img data-px="0.07" src="https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1000&q=72" alt="Two tradesmen working from ladders on the exterior wall of a house." width="1000" height="1250" loading="lazy" decoding="async">
+      <figcaption>Exterior work in progress</figcaption>
+    </figure>
+    <div class="about-body" data-rv style="--d:.1s">
+      <p class="eyebrow">About Atlas</p>
+      <h2 class="serif">Old-school service.<br>Modern standards.</h2>
+      <p>Atlas Home Contractors is owned by Bobby, who customers describe as an old-school contractor with a great personality — the kind who walks the property, talks through what the house actually needs, and gives a clear breakdown of the quote.</p>
+      <p>The company serves homeowners in Staten Island and focuses on residential exterior projects: roofing, siding, windows and custom front entrance doors. Customers have brought Atlas everything from a straightforward new roof to siding, windows and a custom entrance door on a 1905 home.</p>
+      <p>Reviewers consistently use the same words — honest, fair, accommodating, prompt, reliable — and note that the company is licensed and insured.</p>
+      <p class="about-note">One reviewer states that Bobby has been in business for over 40 years. Details on this page reflect what customers have said in their published Google reviews.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">What we work on</p>
+      <h2 class="serif">Four parts of the exterior, done properly.</h2>
+    </div>
+    <div class="work-grid">
+      <figure class="work-item w-a" data-rv>
+        <img data-px="0.05" src="https://images.unsplash.com/photo-1585968895333-12f7ce1bf1bd?auto=format&fit=crop&w=1200&q=70" alt="Steep shingled roof and dormer on a timber-clad house." width="1200" height="900" loading="lazy" decoding="async">
+        <figcaption><span class="wt">Roofing</span><span class="wn">01</span></figcaption>
+      </figure>
+      <figure class="work-item w-b" data-rv style="--d:.07s">
+        <img data-px="0.05" src="https://images.unsplash.com/photo-1629230861721-70db81f04a1e?auto=format&fit=crop&w=900&q=70" alt="Exterior wall of a home finished in brown and white board cladding." width="900" height="1200" loading="lazy" decoding="async">
+        <figcaption><span class="wt">Siding</span><span class="wn">02</span></figcaption>
+      </figure>
+      <figure class="work-item w-c" data-rv style="--d:.07s">
+        <img data-px="0.05" src="https://images.unsplash.com/photo-1612217959554-3168505e8e4c?auto=format&fit=crop&w=900&q=70" alt="White-framed sash window with interior blinds seen from outside." width="900" height="900" loading="lazy" decoding="async">
+        <figcaption><span class="wt">Windows</span><span class="wn">03</span></figcaption>
+      </figure>
+      <figure class="work-item w-d" data-rv style="--d:.14s">
+        <img data-px="0.05" src="https://images.unsplash.com/photo-1575397205849-f5e0a03323a3?auto=format&fit=crop&w=1200&q=70" alt="Painted timber house frontage with a panelled front entrance." width="1200" height="825" loading="lazy" decoding="async">
+        <figcaption><span class="wt">Entry Doors</span><span class="wn">04</span></figcaption>
+      </figure>
+    </div>
+    <p class="work-disclaim" data-rv>These photographs illustrate the categories of exterior work Atlas Home Contractors takes on. They are reference imagery, not photographs of completed Atlas projects.</p>
+  </div>
+</section>
+
+<section class="sec" id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="rev-top" data-rv>
+      <div>
+        <p class="eyebrow">Reviews</p>
+        <h2 class="serif" style="margin-top:1.1rem">What homeowners say.</h2>
+      </div>
+      <div class="rev-score">
+        <b>4.1</b>
+        <span class="sd"><span>/ 5 on Google</span><span>9 reviews</span></span>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev" data-rv>
+        <blockquote>Bobby has been in business over 40 years — licensed and insured. Hired for a new roof and very satisfied. Honest, fair, accommodating, prompt, reliable.</blockquote>
+        <figcaption>
+          <span class="stars" aria-label="Rated 5 out of 5">★★★★★</span>
+          <span class="who">Lisa Rooney</span>
+          <span class="src">Google review</span>
+        </figcaption>
+      </figure>
+      <figure class="rev" data-rv style="--d:.08s">
+        <blockquote>Heard about Bobby by word of mouth. Got a quote for new siding, windows and a custom front entrance door on a 1905 home. Old-school, great personality, clear quote breakdown.</blockquote>
+        <figcaption>
+          <span class="stars" aria-label="Rated 5 out of 5">★★★★★</span>
+          <span class="who">Ryan Carr</span>
+          <span class="src">Google Local Guide</span>
+        </figcaption>
+      </figure>
+      <figure class="rev" data-rv style="--d:.16s">
+        <blockquote>Wanted siding and roof done by the same company after multiple leaks. Bobby gave a fair quote, took a small deposit, and work started immediately.</blockquote>
+        <figcaption>
+          <span class="stars" aria-label="Rated 5 out of 5">★★★★★</span>
+          <span class="who">Dmitriy Teytelman</span>
+          <span class="src">Google Local Guide</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark on-dark">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Process</p>
+      <h2 class="serif">Four steps, no mystery.</h2>
+    </div>
+    <div class="proc-grid">
+      <div class="proc" data-rv><span class="proc-n">01</span><h3 class="serif">Tell us what you need</h3></div>
+      <div class="proc" data-rv style="--d:.07s"><span class="proc-n">02</span><h3 class="serif">Get your estimate</h3></div>
+      <div class="proc" data-rv style="--d:.14s"><span class="proc-n">03</span><h3 class="serif">Plan the work</h3></div>
+      <div class="proc" data-rv style="--d:.21s"><span class="proc-n">04</span><h3 class="serif">Get the job done</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta on-dark">
+  <div class="cta-bg" aria-hidden="true">
+    <img data-px="0.14" src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1800&q=68" alt="" width="1800" height="1200" loading="lazy" decoding="async">
+  </div>
+  <div class="wrap cta-in">
+    <p class="eyebrow" data-rv>Free estimate</p>
+    <h2 class="serif" data-rv style="--d:.06s">Ready to improve your home?</h2>
+    <p data-rv style="--d:.12s">Tell Atlas what you're planning and take the first step toward a stronger, better-looking exterior.</p>
+    <div class="cta-btns" data-rv style="--d:.18s">
+      <a class="btn btn-primary" href="#contact">Request a Free Estimate</a>
+      <a class="btn btn-ghost" href="tel:+17184423064">Call +1 718-442-3064</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Contact</p>
+      <h2 class="serif">Request an estimate.</h2>
+    </div>
+    <div class="ct-grid">
+      <form class="form-grid" id="estimateForm" novalidate data-rv>
+        <div class="field">
+          <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+          <span class="err" id="e-name" role="status"></span>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="e-phone">
+          <span class="err" id="e-phone" role="status"></span>
+        </div>
+        <div class="field">
+          <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+          <span class="err" id="e-email" role="status"></span>
+        </div>
+        <div class="field">
+          <label for="f-type">Project type <span class="req" aria-hidden="true">*</span></label>
+          <select id="f-type" name="type" required aria-describedby="e-type">
+            <option value="">Select…</option>
+            <option>Roofing</option><option>Siding</option><option>Windows</option>
+            <option>Entry Door</option><option>Multiple Services</option><option>Other</option>
+          </select>
+          <span class="err" id="e-type" role="status"></span>
+        </div>
+        <div class="field full">
+          <label for="f-msg">Message <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="f-msg" name="message" rows="5" required aria-describedby="e-msg" placeholder="Tell Atlas about the property and what you're planning."></textarea>
+          <span class="err" id="e-msg" role="status"></span>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-dark" type="submit">Request My Estimate</button>
+          <p class="form-note" id="formNote">This form opens your own email app with the details filled in, so you can review before sending. Prefer to talk? Call <a href="tel:+17184423064" style="color:inherit">+1 718-442-3064</a>.</p>
+        </div>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="ct-card" data-rv style="--d:.1s">
+        <p class="ct-name serif">Atlas Home Contractors</p>
+        <dl style="margin:0;display:flex;flex-direction:column;gap:1.5rem">
+          <div class="ct-b"><dt>Address</dt><dd>776 Barlow Ave<br>Staten Island, NY 10312</dd></div>
+          <div class="ct-b"><dt>Phone</dt><dd><a href="tel:+17184423064">+1 718-442-3064</a></dd></div>
+          <div class="ct-b"><dt>Area</dt><dd>Staten Island, New York</dd></div>
+        </dl>
+        <a class="btn btn-outline-dark" href="https://www.google.com/maps/dir/?api=1&destination=776+Barlow+Ave%2C+Staten+Island%2C+NY+10312" target="_blank" rel="noopener">Get Directions</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="map" aria-label="Location">
+  <div class="wrap map-in">
+    <div class="map-txt" data-rv>
+      <p class="eyebrow">Location</p>
+      <h3>776 Barlow Ave, Staten Island, NY 10312</h3>
+      <p>Atlas Home Contractors is based in Staten Island, New York.</p>
+      <p class="map-plus">Plus Code · HR4G+C7 Staten Island</p>
+    </div>
+    <a class="btn btn-dark" data-rv style="--d:.08s" href="https://www.google.com/maps/dir/?api=1&destination=776+Barlow+Ave%2C+Staten+Island%2C+NY+10312" target="_blank" rel="noopener">Get Directions</a>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-in">
+    <div class="ft-top">
+      <div class="ft-brand-col">
+        <p class="ft-brand serif">Atlas Home Contractors</p>
+        <p class="ft-tag">Residential roofing, siding, windows and custom entry doors in Staten Island, New York.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#top">Home</a></li><li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li><li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <address>776 Barlow Ave<br>Staten Island, NY 10312<br><a href="tel:+17184423064">+1 718-442-3064</a></address>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© <span id="yr">2026</span> Atlas Home Contractors</span>
+      <span>Licensed &amp; Insured</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="m-call" href="tel:+17184423064">Call Atlas</a>
+  <a class="m-est" href="#contact">Free Estimate</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ============================================================
+     CONFIG — set this before the site goes live.
+     QA FIX 10: the previous build built a mailto: with no recipient,
+     which silently produced an unsendable message. Put Atlas's real
+     inbox here and the estimate form works end to end. Leave it empty
+     and the form tells the visitor to call instead of failing quietly.
+     ============================================================ */
+  var ESTIMATE_EMAIL = "";   // e.g. "bobby@atlashomecontractors.com"
+  var ATLAS_PHONE_HREF = "tel:+17184423064";
+  var ATLAS_PHONE_TEXT = "+1 718-442-3064";
+
+  var RM = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var reduced = RM.matches;
+  if(RM.addEventListener) RM.addEventListener("change", function(e){ reduced = e.matches; });
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  requestAnimationFrame(function(){ document.body.classList.add("ready"); });
+
+  /* ---------- NAV / DRAWER ---------- */
+  var nav = document.getElementById("nav");
+  var burger = document.getElementById("burger");
+  var drawer = document.getElementById("drawer");
+  var mbar = document.getElementById("mbar");
+  var main = document.getElementById("main");
+  var foot = document.querySelector(".ft");
+  var open = false;
+
+  /* QA FIX 11: background made inert + focus moved into the drawer,
+     so keyboard and screen-reader users can't tab behind the overlay. */
+  function setInert(state){
+    [main, foot].forEach(function(el){
+      if(!el) return;
+      if(state){ el.setAttribute("inert",""); el.setAttribute("aria-hidden","true"); }
+      else { el.removeAttribute("inert"); el.removeAttribute("aria-hidden"); }
+    });
+  }
+  function setDrawer(state){
+    open = state;
+    burger.setAttribute("aria-expanded", String(state));
+    burger.setAttribute("aria-label", state ? "Close menu" : "Open menu");
+    if(state){
+      drawer.hidden = false;
+      requestAnimationFrame(function(){
+        drawer.classList.add("open");
+        var first = drawer.querySelector("a");
+        if(first) first.focus({ preventScroll:true });
+      });
+    } else {
+      drawer.classList.remove("open");
+      setTimeout(function(){ if(!open) drawer.hidden = true; }, 620);
+    }
+    setInert(state);
+    document.documentElement.style.overflow = state ? "hidden" : "";
+  }
+  burger.addEventListener("click", function(){ setDrawer(!open); });
+  drawer.addEventListener("click", function(e){ if(e.target.closest("a")) setDrawer(false); });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && open){ setDrawer(false); burger.focus(); return; }
+    if(e.key === "Tab" && open){
+      var f = drawer.querySelectorAll("a[href], button");
+      if(!f.length) return;
+      var first = f[0], last = f[f.length-1];
+      if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* ---------- SCROLL STATE ---------- */
+  var heroEl = document.querySelector(".hero");
+  function onScrollState(){
+    var y = window.scrollY || 0;
+    nav.classList.toggle("solid", y > 60);
+    mbar.classList.toggle("on", y > (heroEl ? heroEl.offsetHeight * 0.75 : 500));
+  }
+
+  /* ---------- SECTION HIGHLIGHT ---------- */
+  var navAnchors = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+  var targets = navAnchors.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+  if("IntersectionObserver" in window){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var i = targets.indexOf(en.target);
+        navAnchors.forEach(function(a, j){
+          if(j === i) a.setAttribute("aria-current","true"); else a.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin:"-45% 0px -50% 0px" });
+    targets.forEach(function(t){ if(t) spy.observe(t); });
+  }
+
+  /* ---------- REVEALS ---------- */
+  var rv = document.querySelectorAll("[data-rv]");
+  if("IntersectionObserver" in window && !reduced){
+    var ro = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add("in"); obs.unobserve(en.target); }
+      });
+    }, { rootMargin:"0px 0px -12% 0px", threshold:.08 });
+    rv.forEach(function(el){ ro.observe(el); });
+  } else {
+    rv.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  /* ---------- PARALLAX ----------
+     Writes --py only. CSS composes it with --hs (hover scale), so the two
+     never overwrite each other the way a raw inline transform did. */
+  var pxEls = Array.prototype.slice.call(document.querySelectorAll("[data-px]"));
+  var vh = window.innerHeight;
+  function parallax(){
+    if(reduced) return;
+    for(var i=0;i<pxEls.length;i++){
+      var el = pxEls[i];
+      var r = el.getBoundingClientRect();
+      if(r.bottom < -240 || r.top > vh + 240) continue;
+      var k = parseFloat(el.getAttribute("data-px")) || 0;
+      var mid = r.top + r.height/2 - vh/2;
+      el.style.setProperty("--py", (-mid * k).toFixed(2) + "px");
+    }
+  }
+
+  /* ---------- 3D SEQUENCE ---------- */
+  var track = document.getElementById("seqTrack");
+  var stage = document.getElementById("stageIn");
+  var rail = document.getElementById("seqRail");
+  var railBtns = rail ? Array.prototype.slice.call(rail.querySelectorAll("button")) : [];
+  var phases = Array.prototype.slice.call(document.querySelectorAll(".seq-phase"));
+  var P = {
+    sky:  document.getElementById("pl-sky"),
+    house:document.getElementById("pl-house"),
+    roof: document.getElementById("pl-roof"),
+    side: document.getElementById("pl-side"),
+    win:  document.getElementById("pl-win"),
+    door: document.getElementById("pl-door"),
+    frame:document.getElementById("pl-frame")
+  };
+  var lastPhase = -1;
+
+  function clamp(v,a,b){ return v<a?a:(v>b?b:v); }
+  function seg(p,a,b){ return clamp((p-a)/(b-a),0,1); }
+  function set(el,tz,ty,op,ps){
+    if(!el) return;
+    el.style.setProperty("--tz", tz.toFixed(1));
+    el.style.setProperty("--ty", ty.toFixed(1));
+    el.style.setProperty("--op", op.toFixed(3));
+    el.style.setProperty("--ps", ps.toFixed(3));
+  }
+
+  function sequence(){
+    if(!track || !stage) return;
+    var r = track.getBoundingClientRect();
+    var total = r.height - vh;
+    if(total <= 0) return;
+    var p = clamp(-r.top / total, 0, 1);
+    var depth = window.innerWidth < 900 ? 0.55 : 1;  // graceful mobile reduction
+
+    if(!reduced){
+      var settle = 1 - seg(p,.62,1);
+      stage.style.setProperty("--rx", (settle * 7.6).toFixed(2));
+      stage.style.setProperty("--ry", ((1-p) * -6 + 3).toFixed(2));
+      stage.style.setProperty("--sc", (0.9 + seg(p,0,.85) * 0.12).toFixed(3));
+
+      set(P.sky,   -320*depth, (1-p)*-14, 1, 1.18);
+      set(P.house, -150*depth + seg(p,0,.22)*60*depth, 0, 1, 1.02 - seg(p,0,.25)*.02);
+
+      var pr = seg(p,.16,.36);
+      set(P.roof,  -30*depth + pr*30*depth, (1-pr)*-150, pr*.96, 1.05 - pr*.05);
+      var ps2 = seg(p,.34,.55);
+      set(P.side,   40*depth, (1-ps2)*130, ps2*.94, 1.06 - ps2*.06);
+      var pw = seg(p,.52,.70);
+      set(P.win,    95*depth, (1-pw)*-90, pw*.92, 1.04 - pw*.04);
+      var pd = seg(p,.66,.84);
+      set(P.door,  145*depth, (1-pd)*80, pd*.94, 1.05 - pd*.05);
+      var pf = seg(p,.80,1);
+      set(P.frame, 200*depth, 0, pf*.85, 1.02 + (1-pf)*.1);
+    } else {
+      stage.style.setProperty("--rx","0");
+      stage.style.setProperty("--ry","0");
+      stage.style.setProperty("--sc","1");
+      set(P.sky,-160,0,1,1.1); set(P.house,-80,0,1,1);
+      set(P.roof,-20,0,.96,1); set(P.side,20,0,.94,1);
+      set(P.win,60,0,.92,1);   set(P.door,100,0,.94,1); set(P.frame,140,0,.85,1);
+    }
+
+    var idx = clamp(Math.floor(p*5),0,4);
+    if(idx !== lastPhase){
+      lastPhase = idx;
+      phases.forEach(function(el,i){ if(i===idx) el.setAttribute("data-on",""); else el.removeAttribute("data-on"); });
+      railBtns.forEach(function(b,i){ b.setAttribute("aria-current", i===idx ? "true" : "false"); });
+    }
+  }
+
+  /* QA FIX 6: offsetTop was measured against the positioned .seq ancestor,
+     so every rail click landed in the wrong place. Use page coordinates. */
+  railBtns.forEach(function(b){
+    b.addEventListener("click", function(){
+      var i = parseInt(b.getAttribute("data-go"),10);
+      var trackTop = track.getBoundingClientRect().top + window.scrollY;
+      var top = trackTop + (track.offsetHeight - vh) * ((i + 0.5) / 5);
+      window.scrollTo({ top: top, behavior: reduced ? "auto" : "smooth" });
+    });
+  });
+
+  /* ---------- RAF LOOP ---------- */
+  var ticking = false;
+  function frame(){ onScrollState(); parallax(); sequence(); ticking = false; }
+  function request(){ if(!ticking){ ticking = true; requestAnimationFrame(frame); } }
+  window.addEventListener("scroll", request, { passive:true });
+  window.addEventListener("resize", function(){ vh = window.innerHeight; request(); }, { passive:true });
+  frame();
+
+  /* ---------- FORM ---------- */
+  var form = document.getElementById("estimateForm");
+  var status = document.getElementById("formStatus");
+  var note = document.getElementById("formNote");
+
+  if(!ESTIMATE_EMAIL && note){
+    note.innerHTML = 'The quickest way to reach Atlas is by phone: <a href="' + ATLAS_PHONE_HREF + '" style="color:inherit">' + ATLAS_PHONE_TEXT + '</a>.';
+  }
+
+  var rules = {
+    name:   { el:"f-name",  err:"e-name",  msg:"Please enter your name.", test:function(v){ return v.trim().length >= 2; } },
+    phone:  { el:"f-phone", err:"e-phone", msg:"Please enter a phone number we can reach you on.", test:function(v){ return v.replace(/\D/g,"").length >= 10; } },
+    email:  { el:"f-email", err:"e-email", msg:"Please enter a valid email address.", test:function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()); } },
+    type:   { el:"f-type",  err:"e-type",  msg:"Please choose a project type.", test:function(v){ return v !== ""; } },
+    message:{ el:"f-msg",   err:"e-msg",   msg:"Please tell us a little about the project.", test:function(v){ return v.trim().length >= 10; } }
+  };
+
+  function check(key, showErr){
+    var r = rules[key];
+    var input = document.getElementById(r.el);
+    var errEl = document.getElementById(r.err);
+    var field = input.closest(".field");
+    var ok = r.test(input.value);
+    if(ok){
+      field.removeAttribute("data-invalid");
+      input.setAttribute("aria-invalid","false");
+      errEl.textContent = "";
+    } else if(showErr){
+      field.setAttribute("data-invalid","");
+      input.setAttribute("aria-invalid","true");
+      errEl.textContent = r.msg;
+    }
+    return ok;
+  }
+
+  Object.keys(rules).forEach(function(k){
+    var input = document.getElementById(rules[k].el);
+    input.addEventListener("blur", function(){ check(k,true); });
+    input.addEventListener("change", function(){ check(k,true); });
+    input.addEventListener("input", function(){ if(input.closest(".field").hasAttribute("data-invalid")) check(k,true); });
+  });
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var firstBad = null, allOk = true;
+    Object.keys(rules).forEach(function(k){
+      if(!check(k,true)){ allOk = false; if(!firstBad) firstBad = document.getElementById(rules[k].el); }
+    });
+
+    status.className = "form-status show";
+
+    if(!allOk){
+      status.textContent = "Please correct the highlighted fields and try again.";
+      if(firstBad) firstBad.focus();
+      return;
+    }
+
+    var d = {
+      name:    document.getElementById("f-name").value.trim(),
+      phone:   document.getElementById("f-phone").value.trim(),
+      email:   document.getElementById("f-email").value.trim(),
+      type:    document.getElementById("f-type").value,
+      message: document.getElementById("f-msg").value.trim()
+    };
+
+    if(!ESTIMATE_EMAIL){
+      status.innerHTML = "This site isn't connected to an inbox yet, so nothing was sent. " +
+        "Please call Atlas on <a href=\"" + ATLAS_PHONE_HREF + "\">" + ATLAS_PHONE_TEXT + "</a> — " +
+        "your details are still in the form if you'd like to read them out.";
+      return;
+    }
+
+    var body = "Name: " + d.name + "\nPhone: " + d.phone + "\nEmail: " + d.email +
+               "\nProject type: " + d.type + "\n\n" + d.message + "\n";
+    var href = "mailto:" + ESTIMATE_EMAIL +
+               "?subject=" + encodeURIComponent("Estimate request — " + d.type + " — " + d.name) +
+               "&body=" + encodeURIComponent(body);
+
+    status.innerHTML = "Opening your email app with these details filled in — press send to deliver it. " +
+      "If nothing opened, call <a href=\"" + ATLAS_PHONE_HREF + "\">" + ATLAS_PHONE_TEXT + "</a> instead.";
+    window.location.href = href;
+  });
+})();
+</script>
+</body>
+</html>
